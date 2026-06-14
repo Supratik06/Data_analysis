@@ -5,7 +5,7 @@ import {
   HelpCircle, Calendar, Users, ListFilter, CreditCard, ChevronRight 
 } from 'lucide-react';
 
-const API_BASE = '/api';
+const API_BASE = 'https://data-analysis-omek.vercel.app/api';
 
 export default function App() {
   // Auth state
