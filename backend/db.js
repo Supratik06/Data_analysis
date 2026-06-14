@@ -6,7 +6,9 @@ import bcrypt from 'bcryptjs';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const dbPath = path.resolve(__dirname, 'database.sqlite');
+const dbPath = process.env.VERCEL
+  ? '/tmp/database.sqlite'
+  : path.resolve(__dirname, 'database.sqlite');
 
 let db = null;
 
