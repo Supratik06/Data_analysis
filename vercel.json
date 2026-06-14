@@ -17,13 +17,14 @@
       "dest": "backend/server.js"
     },
     {
-      "src": "/(.*)",
-      "dest": "frontend/$1",
+      "src": "^/(?!api|backend)(.*)$",
+      "dest": "frontend/$1"
+    },
+    {
       "handle": "filesystem"
     },
     {
-      "src": "/(.*)",
-      "status": 200,
+      "src": "^/(?!api|backend)(.*)$",
       "dest": "frontend/index.html"
     }
   ]
