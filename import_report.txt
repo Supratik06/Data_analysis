@@ -1,0 +1,24 @@
+IMPORT ANOMALY REPORT
+====================
+File Name: Expenses Export.csv
+Date of Ingestion: 6/15/2026, 3:11:28 AM
+Total Transactions Ingested: 40
+Total Anomalies Resolved: 15
+
+Actions Taken Log:
+1. Row 31: Deleted zero-amount entry "Row 31: Expense "Dinner order Swiggy" has zero amount.".
+2. Row 6: Deleted duplicate entry of "Row 6 ("dinner - marina bites") appears to be a duplicate of Row 5 ("Dinner at Marina Bites").".
+3. Row undefined: Ignored in favor of Row undefined (Thalassa Dinner).
+4. Row 9: Mapped payer "priya" to "Priya".
+5. Row 10: Rounded float amount to 900.
+6. Row 11: Mapped payer "Priya S" to "Priya".
+7. Row 13: Assigned missing payer to "Aisha".
+8. Row 14: Converted settlement expense to direct transfer.
+9. Row 23: Dev absorbed Kabir's split share.
+10. Row 27: Mapped payer "rohan" to "Rohan".
+11. Row 27: Converted non-standard date to 2026-03-14.
+12. Row 28: Assigned missing currency to "INR".
+13. Row 34: Resolved ambiguous date to 05-04-2026.
+14. Row 36: Removed Meera from split list (occurred post-departure).
+15. Row 38: Sam deposit share imported as direct settlement payment to Aisha.
+16. Row 40: Removed Sam from split list (occurred pre-arrival).
